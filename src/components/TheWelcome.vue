@@ -360,7 +360,7 @@ h3 {
           <li>
             <div class="radio">
               <input type="radio" name="checkbox" class="checkbox" value="2" v-model="selectChoose">
-              <label>Submit a green check verification request</label><br>
+              <label>Request to enable bonus earning</label><br>
             </div>
           </li>
         </ul>
@@ -385,32 +385,18 @@ h3 {
       </div>
       <div class="main_2" v-else-if="main_1 == 2">
         <!-- <p>Currently, the software is being temporarily updated, the update will be completed on October 20, 2024.</p> -->
-        <h3>Delete pending posts</h3>
-        <span class="desciption">Please proceed slowly to avoid feature blocking</span>
+        <h3>Submit a request to enable bonus earning</h3>
+        <span class="desciption">Only check conditions after 24 hours of submitting a request</span>
         <div class="input">
-          <label for="age1">Link page or profile: </label>
+          <label for="age1">Link page: </label>
           <input type="text" class="input" placeholder="Link">
         </div>
         <div class="input">
           <label for="age1">Contact email: </label>
           <input type="text" class="input" placeholder="contact email">
         </div>
-        <label for="">Select the reason for granting green status</label><br>
         <div class="radio">
-          <input type="radio" name="checkbox" class="checkbox" value="2">
-          <label>Public figure</label><br>
-        </div>
-        <div class="radio">
-          <input type="radio" name="checkbox" class="checkbox" value="2">
-          <label>Social service provider</label><br>
-        </div>
-        <div class="radio">
-          <input type="radio" name="checkbox" class="checkbox" value="2">
-          <label>Social service provider</label><br>
-          <input type="text" name="input" class="input" placeholder="Orther">
-        </div>
-        <div class="radio">
-          <textarea type="text" class="input textarea" v-model="note" rows="5" placeholder="Reasons you want to grant green points (details)"></textarea>
+          <textarea type="text" class="input textarea" v-model="note" rows="5" placeholder="Reasons why we can enable the bonus for you"></textarea>
         </div>
         <br>
         <div class="input-next">
